@@ -19,10 +19,14 @@ class Animal:
     # Call the method `speak` and make it output a specific message like 
     # "The animal makes a noise.""
     def speak(self):
-        print("Then animal makes a noise")
+        print("The animal makes a noise.")
 
     # TODO __str__ method for string representation
     # Example output
     # Kingdom: 'kingdom attribute', Name: 'name attribute' Species: 'species attribute' 
     def __str__(self):
-        return f"Kingdom: '{self.kingdom}', Name: '{self.name}' Species: '{self.species}'"
+        return f"Kingdom: '{self.kingdom}', Name: '{self.name}', Species: '{self.species}'"
+
+    @classmethod
+    def get_all_animals(cls):
+        return cls.all_animals
